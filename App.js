@@ -53,3 +53,19 @@ function checkAnswer(choice) {
     currentQuestion++;
     loadQuestion();
 }
+let currentQuestion = 0;
+
+function loadQuestion() {
+    const q = lesson[currentQuestion];
+
+    document.getElementById("question").textContent = q.question;
+
+    document.getElementById("btn1").textContent = q.choices[0];
+    document.getElementById("btn2").textContent = q.choices[1];
+    document.getElementById("btn3").textContent = q.choices[2];
+    document.getElementById("btn4").textContent = q.choices[3];
+
+    document.getElementById("xp").textContent = xp;
+}
+
+window.onload = loadQuestion;
