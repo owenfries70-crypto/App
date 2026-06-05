@@ -7,13 +7,16 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <h1>Language Learner</h1>
+    <h1>German Learner</h1>
 
-    <div id="card">
-        <h2 id="word">Hola</h2>
-        <button onclick="showAnswer()">Show Translation</button>
-        <p id="answer"></p>
-    </div>
+<p>XP: <span id="xp">0</span></p>
+
+<h2 id="question">Loading...</h2>
+
+<button onclick="checkAnswer('Goodbye')" id="btn1">Choice 1</button>
+<button onclick="checkAnswer('Hello')" id="btn2">Choice 2</button>
+<button onclick="checkAnswer('Thank you')" id="btn3">Choice 3</button>
+<button onclick="checkAnswer('Please')" id="btn4">Choice 4</button>
 
     <script src="app.js"></script>
 </body>
