@@ -1,7 +1,7 @@
 {
   "name": "Language Learner",
   "short_name": "Learner",
-  "start_url": "/",
+  "start_url": "/App/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
