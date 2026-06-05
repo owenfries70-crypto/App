@@ -26,3 +26,30 @@ function addXP() {
   xp += 10;
   localStorage.setItem("xp", xp);
 }
+let currentQuestion = 0;
+
+function loadQuestion() {
+    document.getElementById("question").textContent =
+        lesson[currentQuestion].question;
+}
+{
+    question: 'What does "der Hund" mean?',
+    choices: [
+        "the dog",
+        "the cat",
+        "the house",
+        "the car"
+    ],
+    answer: "the dog"
+}
+function checkAnswer(choice) {
+    if (choice === lesson[currentQuestion].answer) {
+        addXP();
+        alert("Correct!");
+    } else {
+        alert("Incorrect!");
+    }
+
+    currentQuestion++;
+    loadQuestion();
+}
