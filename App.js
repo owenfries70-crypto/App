@@ -20,3 +20,9 @@ const lesson = [
     answer: "Yes"
   }
 ];
+let xp = Number(localStorage.getItem("xp")) || 0;
+
+function addXP() {
+  xp += 10;
+  localStorage.setItem("xp", xp);
+}
